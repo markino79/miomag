@@ -14,3 +14,7 @@ sitemap.xml
 /downloader/*
 .sass-cache
 error_log
+.directory
+.metadata/
+.metadata/*
+
