@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Artera_View>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Artera_View>
+    </modules>
+</config> 

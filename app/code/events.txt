@@ -1,0 +1,333 @@
+./Mage/Sendfriend/controllers/ProductController.php:        Mage::dispatchEvent('sendfriend_product', array('product' => $product));
+./Mage/Customer/Helper/Data.php:        Mage::dispatchEvent('customer_registration_is_allowed', array('result' => $result));
+./Mage/Customer/Model/Session.php:        Mage::dispatchEvent('customer_session_init', array('customer_session'=>$this));
+./Mage/Customer/Model/Session.php:        Mage::dispatchEvent('customer_login', array('customer'=>$customer));
+./Mage/Customer/Model/Session.php:            Mage::dispatchEvent('customer_logout', array('customer' => $this->getCustomer()) );
+./Mage/Customer/Model/Address/Abstract.php:        Mage::dispatchEvent('customer_address_format', array('type' => $formatType, 'address' => $this));
+./Mage/Customer/Model/Customer.php:        Mage::dispatchEvent('customer_customer_authenticated', array(
+./Mage/Adminhtml/controllers/Permissions/RoleController.php:            Mage::dispatchEvent('admin_permissions_role_prepare_save', array('object' => $role, 'request' => $this->getRequest()));
+./Mage/Adminhtml/controllers/CustomerController.php:                Mage::dispatchEvent('adminhtml_customer_prepare_save', array(
+./Mage/Adminhtml/controllers/CustomerController.php:                Mage::dispatchEvent('adminhtml_customer_save_after', array(
+./Mage/Adminhtml/controllers/System/StoreController.php:                        Mage::dispatchEvent('store_group_save', array('group' => $groupModel));
+./Mage/Adminhtml/controllers/System/StoreController.php:                        Mage::dispatchEvent($eventName, array('store'=>$storeModel));
+./Mage/Adminhtml/controllers/System/StoreController.php:            Mage::dispatchEvent('store_delete', array('store' => $model));
+./Mage/Adminhtml/controllers/System/Config/System/StorageController.php:                    Mage::dispatchEvent('add_synchronize_message');
+./Mage/Adminhtml/controllers/System/ConfigController.php:            Mage::dispatchEvent("admin_system_config_changed_section_{$section}",
+./Mage/Adminhtml/controllers/ReportController.php:        Mage::dispatchEvent('on_view_report', array('report' => 'search'));
+./Mage/Adminhtml/controllers/Promo/CatalogController.php:                Mage::dispatchEvent('adminhtml_controller_catalogrule_prepare_save', array('request' => $this->getRequest()));
+./Mage/Adminhtml/controllers/Promo/QuoteController.php:                Mage::dispatchEvent('adminhtml_controller_salesrule_prepare_save', array('request' => $this->getRequest()));
+./Mage/Adminhtml/controllers/Cms/PageController.php:            Mage::dispatchEvent('cms_page_prepare_save', array('page' => $model, 'request' => $this->getRequest()));
+./Mage/Adminhtml/controllers/Cms/PageController.php:                Mage::dispatchEvent('adminhtml_cmspage_on_delete', array('title' => $title, 'status' => 'success'));
+./Mage/Adminhtml/controllers/Cms/PageController.php:                Mage::dispatchEvent('adminhtml_cmspage_on_delete', array('title' => $title, 'status' => 'fail'));
+./Mage/Adminhtml/controllers/Sales/Order/CreateController.php:        Mage::dispatchEvent('adminhtml_sales_order_create_process_data', $eventData);
+./Mage/Adminhtml/controllers/Sales/Order/CreditmemoController.php:        Mage::dispatchEvent('adminhtml_sales_order_creditmemo_register_before', $args);
+./Mage/Adminhtml/controllers/CacheController.php:            Mage::dispatchEvent('clean_media_cache_after');
+./Mage/Adminhtml/controllers/CacheController.php:            Mage::dispatchEvent('clean_catalog_images_cache_after');
+./Mage/Adminhtml/controllers/Catalog/CategoryController.php:            Mage::dispatchEvent('catalog_category_prepare_save', array(
+./Mage/Adminhtml/controllers/Catalog/CategoryController.php:                Mage::dispatchEvent('catalog_controller_category_delete', array('category'=>$category));
+./Mage/Adminhtml/controllers/Catalog/ProductController.php:        Mage::dispatchEvent('catalog_product_new_action', array('product' => $product));
+./Mage/Adminhtml/controllers/Catalog/ProductController.php:        Mage::dispatchEvent('catalog_product_edit_action', array('product' => $product));
+./Mage/Adminhtml/controllers/Catalog/ProductController.php:        Mage::dispatchEvent('catalog_product_prepare_save', array('product' => $product, 'request' => $this->getRequest()));
+./Mage/Adminhtml/controllers/Catalog/ProductController.php:                    Mage::dispatchEvent('catalog_controller_product_delete', array('product' => $product));
+./Mage/Adminhtml/controllers/Catalog/Product/Action/AttributeController.php:                Mage::dispatchEvent('catalog_product_to_website_change', array(
+./Mage/Adminhtml/Controller/Action.php:        Mage::dispatchEvent('adminhtml_controller_action_predispatch_start', array());
+./Mage/Adminhtml/Block/Widget/Container.php:        Mage::dispatchEvent('adminhtml_widget_container_html_before', array('block' => $this));
+./Mage/Adminhtml/Block/Promo/Quote/Edit/Tab/Main.php:        Mage::dispatchEvent('adminhtml_promo_quote_edit_tab_main_prepare_form', array('form' => $form));
+./Mage/Adminhtml/Block/Promo/Quote/Edit/Tab/Actions.php:        Mage::dispatchEvent('adminhtml_block_salesrule_actions_prepareform', array('form' => $form));
+./Mage/Adminhtml/Block/Template.php:        Mage::dispatchEvent('adminhtml_block_html_before', array('block' => $this));
+./Mage/Adminhtml/Block/Report/Grid.php:        Mage::dispatchEvent('adminhtml_widget_grid_filter_collection',
+./Mage/Adminhtml/Block/Cms/Page/Edit/Tab/Main.php:        Mage::dispatchEvent('adminhtml_cms_page_edit_tab_main_prepare_form', array('form' => $form));
+./Mage/Adminhtml/Block/Cms/Page/Edit/Tab/Content.php:        Mage::dispatchEvent('adminhtml_cms_page_edit_tab_content_prepare_form', array('form' => $form));
+./Mage/Adminhtml/Block/Cms/Page/Edit/Tab/Meta.php:        Mage::dispatchEvent('adminhtml_cms_page_edit_tab_meta_prepare_form', array('form' => $form));
+./Mage/Adminhtml/Block/Cms/Page/Edit/Tab/Design.php:        Mage::dispatchEvent('adminhtml_cms_page_edit_tab_design_prepare_form', array('form' => $form));
+./Mage/Adminhtml/Block/Catalog/Category/Tree.php:        Mage::dispatchEvent('adminhtml_catalog_category_tree_is_moveable',
+./Mage/Adminhtml/Block/Catalog/Category/Tree.php:        Mage::dispatchEvent(
+./Mage/Adminhtml/Block/Catalog/Category/Tree.php:        Mage::dispatchEvent(
+./Mage/Adminhtml/Block/Catalog/Category/Tabs.php:        Mage::dispatchEvent('adminhtml_catalog_category_tabs', array(
+./Mage/Adminhtml/Block/Catalog/Product/Attribute/Set/Main.php:        Mage::dispatchEvent('adminhtml_catalog_product_attribute_set_main_html_before', array('block' => $this));
+./Mage/Adminhtml/Block/Catalog/Product/Attribute/Set/Toolbar/Main.php:        Mage::dispatchEvent('adminhtml_catalog_product_attribute_set_toolbar_main_html_before', array('block' => $this));
+./Mage/Adminhtml/Block/Catalog/Product/Attribute/New/Product/Attributes.php:        Mage::dispatchEvent('adminhtml_catalog_product_edit_prepare_form', array('form'=>$form));
+./Mage/Adminhtml/Block/Catalog/Product/Attribute/New/Product/Attributes.php:        Mage::dispatchEvent('adminhtml_catalog_product_edit_element_types', array('response'=>$response));
+./Mage/Adminhtml/Block/Catalog/Product/Attribute/Edit/Tab/Main.php:        Mage::dispatchEvent('adminhtml_product_attribute_types', array('response'=>$response));
+./Mage/Adminhtml/Block/Catalog/Product/Attribute/Edit/Tab/Main.php:        Mage::dispatchEvent('adminhtml_catalog_product_attribute_edit_prepare_form', array(
+./Mage/Adminhtml/Block/Catalog/Product/Edit/Tab/Price/Recurring.php:        Mage::dispatchEvent('catalog_product_edit_form_render_recurring', array(
+./Mage/Adminhtml/Block/Catalog/Product/Edit/Tab/Attributes.php:            Mage::dispatchEvent('adminhtml_catalog_product_edit_prepare_form', array('form'=>$form));
+./Mage/Adminhtml/Block/Catalog/Product/Edit/Tab/Attributes.php:        Mage::dispatchEvent('adminhtml_catalog_product_edit_element_types', array('response'=>$response));
+./Mage/Adminhtml/Block/Catalog/Product/Edit/Tab/Attributes/Create.php:        Mage::dispatchEvent('adminhtml_catalog_product_edit_tab_attributes_create_html_before', array('block' => $this));
+./Mage/Adminhtml/Block/Catalog/Product/Edit/Action/Attribute/Tab/Attributes.php:        Mage::dispatchEvent('adminhtml_catalog_product_form_prepare_excluded_field_list', array('object'=>$this));
+./Mage/Adminhtml/Model/Sales/Order/Create.php:        Mage::dispatchEvent('sales_convert_order_to_quote', array(
+./Mage/Adminhtml/Model/Sales/Order/Create.php:            Mage::dispatchEvent('sales_convert_order_item_to_quote_item', array(
+./Mage/Adminhtml/Model/Sales/Order/Create.php:        Mage::dispatchEvent('checkout_submit_all_after', array('order' => $order, 'quote' => $quote));
+./Mage/Rule/Model/Environment.php:        Mage::dispatchEvent('rule_environment_collect', array('env'=>$this));
+./Mage/Tax/Model/Calculation/Rate.php:        Mage::dispatchEvent('tax_settings_change_after');
+./Mage/Tax/Model/Calculation/Rate.php:        Mage::dispatchEvent('tax_settings_change_after');
+./Mage/Tax/Model/Calculation/Rate.php:        Mage::dispatchEvent('tax_settings_change_after');
+./Mage/Tax/Model/Calculation/Rule.php:        Mage::dispatchEvent('tax_settings_change_after');
+./Mage/Tax/Model/Calculation/Rule.php:        Mage::dispatchEvent('tax_settings_change_after');
+./Mage/Tax/Model/Calculation.php:            Mage::dispatchEvent('tax_rate_data_fetch', array('request'=>$request));
+./Mage/Tag/Model/Mysql4/Indexer/Summary.php:            Mage::dispatchEvent('prepare_catalog_product_index_select', array(
+./Mage/Tag/Model/Mysql4/Product/Collection.php:            Mage::dispatchEvent('tag_tag_product_collection_load_after', array(
+./Mage/Core/Controller/Response/Http.php:        Mage::dispatchEvent('http_response_send_before', array('response'=>$this));
+./Mage/Core/Controller/Varien/Action.php:        Mage::dispatchEvent(
+./Mage/Core/Controller/Varien/Action.php:            Mage::dispatchEvent(
+./Mage/Core/Controller/Varien/Action.php:            Mage::dispatchEvent(
+./Mage/Core/Controller/Varien/Action.php:            Mage::dispatchEvent(
+./Mage/Core/Controller/Varien/Action.php:        Mage::dispatchEvent('controller_action_layout_render_before');
+./Mage/Core/Controller/Varien/Action.php:        Mage::dispatchEvent('controller_action_layout_render_before_'.$this->getFullActionName());
+./Mage/Core/Controller/Varien/Action.php:        Mage::dispatchEvent('controller_action_predispatch', array('controller_action'=>$this));
+./Mage/Core/Controller/Varien/Action.php:        Mage::dispatchEvent(
+./Mage/Core/Controller/Varien/Action.php:        Mage::dispatchEvent(
+./Mage/Core/Controller/Varien/Action.php:        Mage::dispatchEvent(
+./Mage/Core/Controller/Varien/Action.php:        Mage::dispatchEvent(
+./Mage/Core/Controller/Varien/Action.php:        Mage::dispatchEvent('controller_action_postdispatch', array('controller_action'=>$this));
+./Mage/Core/Controller/Varien/Action.php:        Mage::dispatchEvent('controller_action_noroute', array('action'=>$this, 'status'=>$status));
+./Mage/Core/Controller/Varien/Action.php:        Mage::dispatchEvent('controller_action_nocookies', array(
+./Mage/Core/Controller/Varien/Front.php:        Mage::dispatchEvent('controller_front_init_before', array('front'=>$this));
+./Mage/Core/Controller/Varien/Front.php:        Mage::dispatchEvent('controller_front_init_routers', array('front'=>$this));
+./Mage/Core/Controller/Varien/Front.php:        Mage::dispatchEvent('controller_front_send_response_before', array('front'=>$this));
+./Mage/Core/Controller/Varien/Front.php:        Mage::dispatchEvent('controller_front_send_response_after', array('front'=>$this));
+./Mage/Core/Helper/Data.php:        Mage::dispatchEvent($eventName, array(
+./Mage/Core/Block/Abstract.php:        Mage::dispatchEvent('core_block_abstract_prepare_layout_before', array('block' => $this));
+./Mage/Core/Block/Abstract.php:        Mage::dispatchEvent('core_block_abstract_prepare_layout_after', array('block' => $this));
+./Mage/Core/Block/Abstract.php:        Mage::dispatchEvent('core_block_abstract_to_html_before', array('block' => $this));
+./Mage/Core/Block/Abstract.php:        Mage::dispatchEvent('core_block_abstract_to_html_after', array('block' => $this, 'transport' => self::$_transportObject));
+./Mage/Core/Model/Layout/Update.php://            Mage::dispatchEvent('core_layout_update_updates_get_after', array('updates' => $updatesRoot));
+./Mage/Core/Model/Layout/Update.php:        Mage::dispatchEvent('core_layout_update_updates_get_after', array('updates' => $updatesRoot));
+./Mage/Core/Model/Abstract.php:        Mage::dispatchEvent('model_load_before', $params);
+./Mage/Core/Model/Abstract.php:        Mage::dispatchEvent($this->_eventPrefix.'_load_before', $params);
+./Mage/Core/Model/Abstract.php:        Mage::dispatchEvent('model_load_after', array('object'=>$this));
+./Mage/Core/Model/Abstract.php:        Mage::dispatchEvent($this->_eventPrefix.'_load_after', $this->_getEventData());
+./Mage/Core/Model/Abstract.php:        Mage::dispatchEvent('model_save_commit_after', array('object'=>$this));
+./Mage/Core/Model/Abstract.php:        Mage::dispatchEvent($this->_eventPrefix.'_save_commit_after', $this->_getEventData());
+./Mage/Core/Model/Abstract.php:        Mage::dispatchEvent('model_save_before', array('object'=>$this));
+./Mage/Core/Model/Abstract.php:        Mage::dispatchEvent($this->_eventPrefix.'_save_before', $this->_getEventData());
+./Mage/Core/Model/Abstract.php:        Mage::dispatchEvent('model_save_after', array('object'=>$this));
+./Mage/Core/Model/Abstract.php:        Mage::dispatchEvent($this->_eventPrefix.'_save_after', $this->_getEventData());
+./Mage/Core/Model/Abstract.php:        Mage::dispatchEvent('model_delete_before', array('object'=>$this));
+./Mage/Core/Model/Abstract.php:        Mage::dispatchEvent($this->_eventPrefix.'_delete_before', $this->_getEventData());
+./Mage/Core/Model/Abstract.php:        Mage::dispatchEvent('model_delete_after', array('object'=>$this));
+./Mage/Core/Model/Abstract.php:        Mage::dispatchEvent($this->_eventPrefix.'_delete_after', $this->_getEventData());
+./Mage/Core/Model/Abstract.php:        Mage::dispatchEvent('model_delete_commit_after', array('object'=>$this));
+./Mage/Core/Model/Abstract.php:        Mage::dispatchEvent($this->_eventPrefix.'_delete_commit_after', $this->_getEventData());
+./Mage/Core/Model/Abstract.php:        Mage::dispatchEvent($this->_eventPrefix.'_clear', $this->_getEventData());
+./Mage/Core/Model/Layout.php:        Mage::dispatchEvent('core_layout_block_create_after', array('block'=>$block));
+./Mage/Core/Model/Locale.php:        Mage::dispatchEvent('core_locale_set_locale', array('locale'=>$this));
+./Mage/Core/Model/Mysql4/Collection/Abstract.php:        Mage::dispatchEvent('core_collection_abstract_load_before', array('collection' => $this));
+./Mage/Core/Model/Mysql4/Collection/Abstract.php:            Mage::dispatchEvent($this->_eventPrefix.'_load_before', array(
+./Mage/Core/Model/Mysql4/Collection/Abstract.php:        Mage::dispatchEvent('core_collection_abstract_load_after', array('collection' => $this));
+./Mage/Core/Model/Mysql4/Collection/Abstract.php:            Mage::dispatchEvent($this->_eventPrefix.'_load_after', array(
+./Mage/Core/Model/App.php:        Mage::dispatchEvent('application_clean_cache', array('tags' => $tags));
+./Mage/Core/Model/App.php:    public function dispatchEvent($eventName, $args)
+./Mage/Core/Model/Resource.php:        Mage::dispatchEvent('resource_get_tablename', array('resource' => $this, 'model_entity' => $modelEntity, 'table_name' => $tableName));
+./Mage/Core/Model/Session/Abstract.php:            Mage::dispatchEvent('core_session_abstract_clear_messages');
+./Mage/Core/Model/Session/Abstract.php:        Mage::dispatchEvent('core_session_abstract_add_message');
+./Mage/Payment/Block/Info.php:            Mage::dispatchEvent('payment_info_block_prepare_specific_information', array(
+./Mage/Payment/Block/Form/Cc.php:        Mage::dispatchEvent('payment_form_block_to_html_before', array(
+./Mage/Payment/Model/Method/Abstract.php:        Mage::dispatchEvent('payment_method_is_active', array(
+./Mage/Review/controllers/ProductController.php:        Mage::dispatchEvent('review_controller_product_init_before', array('controller_action'=>$this));
+./Mage/Review/controllers/ProductController.php:            Mage::dispatchEvent('review_controller_product_init', array('product'=>$product));
+./Mage/Review/controllers/ProductController.php:            Mage::dispatchEvent('review_controller_product_init_after', array('product'=>$product, 'controller_action' => $this));
+./Mage/Review/Model/Mysql4/Review/Collection.php:        Mage::dispatchEvent('review_review_collection_load_before', array('collection' => $this));
+./Mage/Log/Model/Mysql4/Visitor/Collection.php:        Mage::dispatchEvent('log_visitor_collection_load_before', array('collection' => $this));
+./Mage/Log/Model/Mysql4/Log.php:        Mage::dispatchEvent('log_log_clean_before', array(
+./Mage/Log/Model/Mysql4/Log.php:        Mage::dispatchEvent('log_log_clean_after', array(
+./Mage/Bundle/Block/Catalog/Product/View/Type/Bundle.php:                Mage::dispatchEvent('bundle_product_view_config', $args);
+./Mage/Bundle/Model/Mysql4/Price/Index.php:        Mage::dispatchEvent('catalog_product_prepare_index_select', array(
+./Mage/Bundle/Model/Mysql4/Indexer/Price.php:        Mage::dispatchEvent('catalog_product_prepare_index_select', array(
+./Mage/Bundle/Model/Mysql4/Indexer/Price.php:        Mage::dispatchEvent('prepare_catalog_product_price_index_table', array(
+./Mage/Bundle/Model/Product/Price.php:            Mage::dispatchEvent('catalog_product_get_final_price', array('product'=>$product));
+./Mage/Bundle/Model/Product/Price.php:            Mage::dispatchEvent('prepare_catalog_product_collection_prices', array(
+./Mage/GoogleBase/controllers/Adminhtml/Googlebase/TypesController.php:        Mage::dispatchEvent('controller_action_postdispatch_adminhtml', array('controller_action' => $this));
+./Mage/Cms/Controller/Router.php:        Mage::dispatchEvent('cms_controller_router_match_before', array(
+./Mage/Cms/Helper/Page.php:        Mage::dispatchEvent('cms_page_render', array('page' => $page, 'controller_action' => $action));
+./Mage/Cms/Helper/Wysiwyg/Images.php:        Mage::dispatchEvent('cms_wysiwyg_images_static_urls_allowed', array(
+./Mage/Cms/Model/Page.php:        Mage::dispatchEvent('cms_page_get_available_statuses', array('statuses' => $statuses));
+./Mage/Cms/Model/Wysiwyg/Config.php:        Mage::dispatchEvent('cms_wysiwyg_config_prepare', array('config' => $config));
+./Mage/CatalogRule/Model/Mysql4/Rule.php:        Mage::dispatchEvent('catalogrule_before_apply', array('resource'=>$this));
+./Mage/CatalogRule/Model/Mysql4/Rule.php:        Mage::dispatchEvent('catalogrule_after_apply', array(
+./Mage/GoogleCheckout/controllers/RedirectController.php:        Mage::dispatchEvent('googlecheckout_checkout_before', array('quote' => $session->getQuote()));
+./Mage/GoogleCheckout/Block/Link.php:            Mage::dispatchEvent('googlecheckout_block_link_html_before', array('block' => $this));
+./Mage/GoogleCheckout/Model/Api/Xml/Callback.php:        Mage::dispatchEvent('checkout_submit_all_after', array('order' => $order, 'quote' => $quote));
+./Mage/GoogleCheckout/Model/Api/Xml/Checkout.php:        Mage::dispatchEvent('google_checkout_discount_item_price', array('quote' => $this->getQuote(), 'discount_item' => $discountItem));
+./Mage/Sales/Model/Order/Creditmemo.php:        Mage::dispatchEvent('sales_order_creditmemo_refund', array($this->_eventObject=>$this));
+./Mage/Sales/Model/Order/Creditmemo.php:        Mage::dispatchEvent('sales_order_creditmemo_cancel', array($this->_eventObject=>$this));
+./Mage/Sales/Model/Order/Invoice.php:        Mage::dispatchEvent('sales_order_invoice_pay', array($this->_eventObject=>$this));
+./Mage/Sales/Model/Order/Invoice.php:        Mage::dispatchEvent('sales_order_invoice_cancel', array($this->_eventObject=>$this));
+./Mage/Sales/Model/Order/Invoice.php:        Mage::dispatchEvent('sales_order_invoice_register', array($this->_eventObject=>$this, 'order' => $order));
+./Mage/Sales/Model/Order/Payment/Transaction.php:        Mage::dispatchEvent($this->_eventPrefix . '_load_by_txn_id_before', $this->_getEventData() + array('txn_id' => $txnId));
+./Mage/Sales/Model/Order/Payment/Transaction.php:        Mage::dispatchEvent($this->_eventPrefix . '_load_by_txn_id_after', $this->_getEventData());
+./Mage/Sales/Model/Order/Item.php:            Mage::dispatchEvent('sales_order_item_cancel', array('item'=>$this));
+./Mage/Sales/Model/Order/Payment.php:        Mage::dispatchEvent('sales_order_payment_place_start', array('payment' => $this));
+./Mage/Sales/Model/Order/Payment.php:        Mage::dispatchEvent('sales_order_payment_place_end', array('payment' => $this));
+./Mage/Sales/Model/Order/Payment.php:        Mage::dispatchEvent('sales_order_payment_capture', array('payment' => $this, 'invoice' => $invoice));
+./Mage/Sales/Model/Order/Payment.php:        Mage::dispatchEvent('sales_order_payment_pay', array('payment' => $this, 'invoice' => $invoice));
+./Mage/Sales/Model/Order/Payment.php:        Mage::dispatchEvent('sales_order_payment_cancel_invoice', array('payment' => $this, 'invoice' => $invoice));
+./Mage/Sales/Model/Order/Payment.php:        Mage::dispatchEvent('sales_order_payment_void', array('payment' => $this, 'invoice' => $document));
+./Mage/Sales/Model/Order/Payment.php:        Mage::dispatchEvent('sales_order_payment_refund', array('payment' => $this, 'creditmemo' => $creditmemo));
+./Mage/Sales/Model/Order/Payment.php:        Mage::dispatchEvent('sales_order_payment_cancel_creditmemo',
+./Mage/Sales/Model/Order/Payment.php:        Mage::dispatchEvent('sales_order_payment_cancel', array('payment' => $this));
+./Mage/Sales/Model/Quote/Config.php:        Mage::dispatchEvent('sales_quote_config_get_product_attributes', array('attributes' => $transfer));
+./Mage/Sales/Model/Quote/Item.php:        Mage::dispatchEvent('sales_quote_item_qty_set_after', array('item'=>$this));
+./Mage/Sales/Model/Quote/Item.php:        Mage::dispatchEvent('sales_quote_item_set_product', array(
+./Mage/Sales/Model/Quote/Address/Total/Discount.php:                        Mage::dispatchEvent('sales_quote_address_discount_item', $eventArgs);
+./Mage/Sales/Model/Quote/Address/Total/Discount.php:                    Mage::dispatchEvent('sales_quote_address_discount_item', $eventArgs);
+./Mage/Sales/Model/Quote/Payment.php:        Mage::dispatchEvent(
+./Mage/Sales/Model/Quote.php:            Mage::dispatchEvent('sales_quote_remove_item', array('quote_item' => $item));
+./Mage/Sales/Model/Quote.php:            Mage::dispatchEvent('sales_quote_add_item', array('quote_item' => $item));
+./Mage/Sales/Model/Quote.php:        Mage::dispatchEvent('sales_quote_product_add_after', array('items' => $items));
+./Mage/Sales/Model/Quote.php:        Mage::dispatchEvent(
+./Mage/Sales/Model/Quote.php:        Mage::dispatchEvent(
+./Mage/Sales/Model/Quote.php:        Mage::dispatchEvent(
+./Mage/Sales/Model/Quote.php:        Mage::dispatchEvent(
+./Mage/Sales/Model/Mysql4/Order/Abstract.php:            Mage::dispatchEvent($this->_eventPrefix . '_init_virtual_grid_columns', array(
+./Mage/Sales/Model/Mysql4/Order/Abstract.php:                Mage::dispatchEvent($this->_eventPrefix . '_update_grid_records', array('proxy' => $proxy));
+./Mage/Sales/Model/Mysql4/Order/Abstract.php:            Mage::dispatchEvent($this->_eventPrefix . '_save_attribute_before', array(
+./Mage/Sales/Model/Mysql4/Order/Abstract.php:            Mage::dispatchEvent($this->_eventPrefix . '_save_attribute_after', array(
+./Mage/Sales/Model/Mysql4/Order/Collection/Abstract.php:            Mage::dispatchEvent($this->_eventPrefix . '_set_sales_order', array(
+./Mage/Sales/Model/Mysql4/Order/Address/Collection.php:        Mage::dispatchEvent($this->_eventPrefix.'_load_after', array(
+./Mage/Sales/Model/Mysql4/Quote/Item/Collection.php:        Mage::dispatchEvent('prepare_catalog_product_collection_prices', array(
+./Mage/Sales/Model/Mysql4/Quote/Item/Collection.php:        Mage::dispatchEvent('sales_quote_item_collection_products_after_load', array(
+./Mage/Sales/Model/Mysql4/Quote/Address/Collection.php:        Mage::dispatchEvent($this->_eventPrefix.'_load_after', array(
+./Mage/Sales/Model/Mysql4/Sale/Collection.php:        Mage::dispatchEvent('sales_sale_collection_query_before', array('collection' => $this));
+./Mage/Sales/Model/Service/Quote.php:        Mage::dispatchEvent('checkout_type_onepage_save_order', array('order'=>$order, 'quote'=>$quote));
+./Mage/Sales/Model/Service/Quote.php:        Mage::dispatchEvent('sales_model_service_quote_submit_before', array('order'=>$order, 'quote'=>$quote));
+./Mage/Sales/Model/Service/Quote.php:            Mage::dispatchEvent('sales_model_service_quote_submit_success', array('order'=>$order, 'quote'=>$quote));
+./Mage/Sales/Model/Service/Quote.php:            Mage::dispatchEvent('sales_model_service_quote_submit_failure', array('order'=>$order, 'quote'=>$quote));
+./Mage/Sales/Model/Service/Quote.php:        Mage::dispatchEvent('sales_model_service_quote_submit_after', array('order'=>$order, 'quote'=>$quote));
+./Mage/Sales/Model/Order.php:        Mage::dispatchEvent('sales_order_place_before', array('order'=>$this));
+./Mage/Sales/Model/Order.php:        Mage::dispatchEvent('sales_order_place_after', array('order'=>$this));
+./Mage/Sales/Model/Convert/Quote.php:        Mage::dispatchEvent('sales_convert_quote_to_order', array('order'=>$order, 'quote'=>$quote));
+./Mage/Sales/Model/Convert/Quote.php:        Mage::dispatchEvent('sales_convert_quote_address_to_order', array('address'=>$address, 'order'=>$order));
+./Mage/Sales/Model/Convert/Quote.php:        Mage::dispatchEvent('sales_convert_quote_address_to_order_address',
+./Mage/Sales/Model/Convert/Quote.php:        Mage::dispatchEvent('sales_convert_quote_payment_to_order_payment',
+./Mage/Sales/Model/Convert/Quote.php:        Mage::dispatchEvent('sales_convert_quote_item_to_order_item',
+./Mage/Sales/Model/Convert/Order.php:        Mage::dispatchEvent('sales_convert_order_to_quote', array('order'=>$order, 'quote'=>$quote));
+./Mage/CatalogIndex/Model/Indexer.php:        Mage::dispatchEvent('catalogindex_plain_reindex_after', array(
+./Mage/CatalogIndex/Model/Indexer.php:                                Mage::dispatchEvent('catalogindex_prepare_price_select', $args);
+./Mage/CatalogIndex/Model/Data/Abstract.php:        Mage::dispatchEvent('catalogindex_get_minimal_price', $eventData);
+./Mage/CatalogIndex/Model/Mysql4/Price.php:            Mage::dispatchEvent('catalogindex_prepare_price_select', $args);
+./Mage/CatalogIndex/Model/Mysql4/Price.php:            Mage::dispatchEvent('catalogindex_prepare_price_select', $args);
+./Mage/CatalogIndex/Model/Mysql4/Price.php:            Mage::dispatchEvent('catalogindex_prepare_price_select', $args);
+./Mage/CatalogIndex/Model/Mysql4/Price.php:            Mage::dispatchEvent('catalogindex_prepare_price_select', $args);
+./Mage/Api/Model/User.php:            Mage::dispatchEvent('api_user_authenticated', array(
+./Mage/Eav/Block/Adminhtml/Attribute/Edit/Main/Abstract.php:        Mage::dispatchEvent('adminhtml_block_eav_attribute_edit_form_init', array('form' => $this->getForm()));
+./Mage/Eav/Model/Entity/Collection/Abstract.php:        Mage::dispatchEvent('eav_collection_abstract_load_before', array('collection' => $this));
+./Mage/Eav/Model/Entity/Attribute.php:                Mage::dispatchEvent('eav_attribute_get_backend_type_by_input', array('model'=>$this, 'type'=>$type));
+./Mage/Eav/Model/Entity/Attribute.php:                Mage::dispatchEvent('eav_attribute_get_default_value_by_input', array('model'=>$this, 'type'=>$type));
+./Mage/Admin/Model/Session.php:                    Mage::dispatchEvent('admin_session_user_login_success', array('user'=>$user));
+./Mage/Admin/Model/Session.php:            Mage::dispatchEvent('admin_session_user_login_failed', array('user_name'=>$username, 'exception' => $e));
+./Mage/Admin/Model/User.php:            Mage::dispatchEvent('admin_user_authenticate_after', array(
+./Mage/GiftMessage/Block/Message/Inline.php:            Mage::dispatchEvent('gift_options_prepare_items', array('items' => $entityItems));
+./Mage/Rss/Block/Order/New.php:        Mage::dispatchEvent('rss_order_new_collection_select', array('collection' => $collection));
+./Mage/Rss/Block/Catalog/Special.php:        Mage::dispatchEvent('rss_catalog_special_xml_callback', $args);
+./Mage/Rss/Block/Catalog/NotifyStock.php:        Mage::dispatchEvent('rss_catalog_notify_stock_collection_select', array('collection' => $collection));
+./Mage/Rss/Block/Catalog/Tag.php:        Mage::dispatchEvent('rss_catalog_tagged_item_xml_callback', $args);
+./Mage/Rss/Block/Catalog/Category.php:        Mage::dispatchEvent('rss_catalog_category_xml_callback', $args);
+./Mage/Rss/Block/Catalog/New.php:        Mage::dispatchEvent('rss_catalog_new_xml_callback', $args);
+./Mage/Rss/Block/Catalog/Review.php:        Mage::dispatchEvent('rss_catalog_review_collection_select', array('collection' => $collection));
+./Mage/Wishlist/controllers/IndexController.php:            Mage::dispatchEvent(
+./Mage/Wishlist/controllers/IndexController.php:            Mage::dispatchEvent('wishlist_update_item', array('wishlist' => $wishlist, 'product' => $product, 'item' => $wishlist->getItem($id)));
+./Mage/Wishlist/controllers/IndexController.php:            Mage::dispatchEvent('wishlist_share', array('wishlist'=>$wishlist));
+./Mage/Wishlist/Helper/Data.php:        Mage::dispatchEvent('wishlist_items_renewed');
+./Mage/Wishlist/Model/Mysql4/Item/Collection.php:        Mage::dispatchEvent('wishlist_item_collection_products_after_load', array(
+./Mage/Wishlist/Model/Wishlist.php:            Mage::dispatchEvent('wishlist_add_item', array('item' => $item));
+./Mage/Wishlist/Model/Wishlist.php:        Mage::dispatchEvent('wishlist_product_add_after', array('items' => $items));
+./Mage/SalesRule/Model/Rule/Condition/Combine.php:        Mage::dispatchEvent('salesrule_rule_condition_combine', array('additional' => $additional));
+./Mage/SalesRule/Model/Quote/Discount.php:                Mage::dispatchEvent('sales_quote_address_discount_item', $eventArgs);
+./Mage/SalesRule/Model/Quote/Discount.php:                        Mage::dispatchEvent('sales_quote_address_discount_item', $eventArgs);
+./Mage/SalesRule/Model/Rule.php:            Mage::dispatchEvent('salesrule_rule_get_coupon_types', array('transport' => $transport));
+./Mage/SalesRule/Model/Validator.php:            Mage::dispatchEvent('salesrule_validator_process', array(
+./Mage/XmlConnect/controllers/WishlistController.php:            Mage::dispatchEvent('wishlist_add_product', array('wishlist'=>$wishlist, 'product'=>$product));
+./Mage/XmlConnect/controllers/CartController.php:            Mage::dispatchEvent('checkout_cart_add_product_complete',
+./Mage/XmlConnect/controllers/CheckoutController.php:            Mage::dispatchEvent('checkout_controller_onepage_save_shipping_method', array('request'=>$this->getRequest(), 'quote'=>$this->getOnepage()->getQuote()));
+./Mage/XmlConnect/Model/Queue.php:                Mage::dispatchEvent('before_save_message_queue', array('queueMessage' => $this));
+./Mage/Checkout/controllers/MultishippingController.php:            Mage::dispatchEvent(
+./Mage/Checkout/controllers/MultishippingController.php:        Mage::dispatchEvent('checkout_multishipping_controller_success_action', array('order_ids' => $ids));
+./Mage/Checkout/controllers/OnepageController.php:        Mage::dispatchEvent('checkout_onepage_controller_success_action', array('order_ids' => array($lastOrderId)));
+./Mage/Checkout/controllers/OnepageController.php:                Mage::dispatchEvent('checkout_controller_onepage_save_shipping_method', array('request'=>$this->getRequest(), 'quote'=>$this->getOnepage()->getQuote()));
+./Mage/Checkout/controllers/CartController.php:            Mage::dispatchEvent('checkout_cart_add_product_complete',
+./Mage/Checkout/controllers/CartController.php:            Mage::dispatchEvent('checkout_cart_update_item_complete',
+./Mage/Checkout/Helper/Data.php:            Mage::dispatchEvent('checkout_allow_guest', array(
+./Mage/Checkout/Model/Session.php:                    Mage::dispatchEvent('checkout_quote_init', array('quote'=>$quote));
+./Mage/Checkout/Model/Session.php:        Mage::dispatchEvent('checkout_quote_destroy', array('quote'=>$this->getQuote()));
+./Mage/Checkout/Model/Type/Multishipping.php:            Mage::dispatchEvent('checkout_type_multishipping_set_shipping_items', array('quote'=>$quote));
+./Mage/Checkout/Model/Type/Multishipping.php:                Mage::dispatchEvent(
+./Mage/Checkout/Model/Type/Multishipping.php:            Mage::dispatchEvent('checkout_submit_all_after', array('orders' => $orders, 'quote' => $this->getQuote()));
+./Mage/Checkout/Model/Type/Multishipping.php:            Mage::dispatchEvent('checkout_multishipping_refund_all', array('orders' => $orders));
+./Mage/Checkout/Model/Type/Onepage.php:            Mage::dispatchEvent('checkout_type_onepage_save_order_after', array('order'=>$order, 'quote'=>$this->getQuote()));
+./Mage/Checkout/Model/Type/Onepage.php:        Mage::dispatchEvent(
+./Mage/Checkout/Model/Type/Onepage.php://        Mage::dispatchEvent('checkout_type_onepage_save_order', array('order'=>$order, 'quote'=>$this->getQuote()));
+./Mage/Checkout/Model/Type/Onepage.php://        Mage::dispatchEvent('checkout_type_onepage_save_order_after', array('order'=>$order, 'quote'=>$this->getQuote()));
+./Mage/Checkout/Model/Cart/Api.php:                Mage::dispatchEvent('checkout_type_onepage_save_order_after', array('order'=>$order, 'quote'=>$quote));
+./Mage/Checkout/Model/Cart/Api.php:            Mage::dispatchEvent(
+./Mage/Checkout/Model/Cart.php:        Mage::dispatchEvent('checkout_cart_product_add_after', array('quote_item' => $result, 'product' => $product));
+./Mage/Checkout/Model/Cart.php:        Mage::dispatchEvent('checkout_cart_update_items_before', array('cart'=>$this, 'info'=>$data));
+./Mage/Checkout/Model/Cart.php:        Mage::dispatchEvent('checkout_cart_update_items_after', array('cart'=>$this, 'info'=>$data));
+./Mage/Checkout/Model/Cart.php:        Mage::dispatchEvent('checkout_cart_save_after', array('cart'=>$this));
+./Mage/Checkout/Model/Cart.php:        Mage::dispatchEvent('checkout_cart_product_update_after', array('quote_item' => $result, 'product' => $product));
+./Mage/Catalog/controllers/CategoryController.php:        Mage::dispatchEvent('catalog_controller_category_init_before', array('controller_action' => $this));
+./Mage/Catalog/controllers/CategoryController.php:            Mage::dispatchEvent('catalog_controller_category_init_after', array('category' => $category, 'controller_action' => $this));
+./Mage/Catalog/controllers/Product/CompareController.php:                Mage::dispatchEvent('catalog_product_compare_add_product', array('product'=>$product));
+./Mage/Catalog/controllers/Product/CompareController.php:                    Mage::dispatchEvent('catalog_product_compare_remove_product', array('product'=>$item));
+./Mage/Catalog/Helper/Output.php:        Mage::dispatchEvent('catalog_helper_output_construct', array('helper'=>$this));
+./Mage/Catalog/Helper/Product.php:        Mage::dispatchEvent('catalog_controller_product_init_before', array('controller_action' => $controller));
+./Mage/Catalog/Helper/Product.php:            Mage::dispatchEvent('catalog_controller_product_init', array('product' => $product));
+./Mage/Catalog/Helper/Product.php:            Mage::dispatchEvent('catalog_controller_product_init_after', array('product' => $product, 'controller_action' => $controller));
+./Mage/Catalog/Helper/Product/View.php:        Mage::dispatchEvent('catalog_controller_product_view', array('product' => $product));
+./Mage/Catalog/Block/Product/View/Type/Configurable.php:                    Mage::dispatchEvent(
+./Mage/Catalog/Block/Product/View.php:        Mage::dispatchEvent('catalog_product_view_config', array('response_object'=>$responseObject));
+./Mage/Catalog/Block/Product/List.php:        Mage::dispatchEvent('catalog_block_product_list_collection', array(
+./Mage/Catalog/Block/Product/List/Upsell.php:        Mage::dispatchEvent('catalog_product_upsell', array(
+./Mage/Catalog/Model/Resource/Eav/Mysql4/Category.php:            Mage::dispatchEvent('catalog_category_change_products', array(
+./Mage/Catalog/Model/Resource/Eav/Mysql4/Category/Collection.php:        Mage::dispatchEvent($this->_eventPrefix . '_load_before',
+./Mage/Catalog/Model/Resource/Eav/Mysql4/Category/Collection.php:        Mage::dispatchEvent($this->_eventPrefix . '_load_after',
+./Mage/Catalog/Model/Resource/Eav/Mysql4/Category/Collection.php:        Mage::dispatchEvent($this->_eventPrefix . '_add_is_active_filter',
+./Mage/Catalog/Model/Resource/Eav/Mysql4/Category/Tree.php:        Mage::dispatchEvent('catalog_category_tree_init_inactive_category_ids', array('tree'=>$this));
+./Mage/Catalog/Model/Resource/Eav/Mysql4/Category/Tree.php:        Mage::dispatchEvent('catalog_category_tree_move_before',
+./Mage/Catalog/Model/Resource/Eav/Mysql4/Category/Tree.php:        Mage::dispatchEvent('catalog_category_tree_move_after',
+./Mage/Catalog/Model/Resource/Eav/Mysql4/Category/Flat/Collection.php:        Mage::dispatchEvent($this->_eventPrefix . '_load_before',
+./Mage/Catalog/Model/Resource/Eav/Mysql4/Category/Flat/Collection.php:        Mage::dispatchEvent($this->_eventPrefix . '_load_after',
+./Mage/Catalog/Model/Resource/Eav/Mysql4/Category/Flat/Collection.php:        Mage::dispatchEvent($this->_eventPrefix . '_add_is_active_filter',
+./Mage/Catalog/Model/Resource/Eav/Mysql4/Category/Flat.php:        Mage::dispatchEvent('catalog_category_tree_init_inactive_category_ids', array('tree'=>$this));
+./Mage/Catalog/Model/Resource/Eav/Mysql4/Layer/Filter/Price.php:        Mage::dispatchEvent('catalogindex_prepare_price_select', $eventArgs);
+./Mage/Catalog/Model/Resource/Eav/Mysql4/Layer/Filter/Price.php:        Mage::dispatchEvent('catalog_prepare_price_select', $eventArgs);
+./Mage/Catalog/Model/Resource/Eav/Mysql4/Product/Collection.php:        Mage::dispatchEvent('catalog_product_collection_load_before', array('collection'=>$this));
+./Mage/Catalog/Model/Resource/Eav/Mysql4/Product/Collection.php:            Mage::dispatchEvent('catalog_product_collection_load_after', array('collection'=>$this));
+./Mage/Catalog/Model/Resource/Eav/Mysql4/Product/Collection.php:            Mage::dispatchEvent('catalog_product_collection_before_add_count_to_categories', array('collection'=>$this));
+./Mage/Catalog/Model/Resource/Eav/Mysql4/Product/Collection.php:        Mage::dispatchEvent('catalog_product_collection_apply_limitations_after', array(
+./Mage/Catalog/Model/Resource/Eav/Mysql4/Product/Flat/Indexer.php:            Mage::dispatchEvent('catalog_product_flat_prepare_columns', array(
+./Mage/Catalog/Model/Resource/Eav/Mysql4/Product/Flat/Indexer.php:            Mage::dispatchEvent('catalog_product_flat_prepare_indexes', array(
+./Mage/Catalog/Model/Resource/Eav/Mysql4/Product/Flat/Indexer.php:        Mage::dispatchEvent('catalog_product_flat_rebuild', array(
+./Mage/Catalog/Model/Resource/Eav/Mysql4/Product/Flat/Indexer.php:        Mage::dispatchEvent('catalog_product_flat_update_product', array(
+./Mage/Catalog/Model/Resource/Eav/Mysql4/Product/Compare/Item/Collection.php:        Mage::dispatchEvent('catalog_product_compare_item_collection_clear');
+./Mage/Catalog/Model/Resource/Eav/Mysql4/Product/Indexer/Price/Grouped.php:        Mage::dispatchEvent('catalog_product_prepare_index_select', array(
+./Mage/Catalog/Model/Resource/Eav/Mysql4/Product/Indexer/Price/Default.php:        Mage::dispatchEvent('prepare_catalog_product_index_select', array(
+./Mage/Catalog/Model/Resource/Eav/Mysql4/Product/Indexer/Price/Default.php:        Mage::dispatchEvent('prepare_catalog_product_price_index_table', array(
+./Mage/Catalog/Model/Resource/Eav/Mysql4/Product/Indexer/Eav/Source.php:        Mage::dispatchEvent('prepare_catalog_product_index_select', array(
+./Mage/Catalog/Model/Resource/Eav/Mysql4/Product/Indexer/Eav/Source.php:        Mage::dispatchEvent('prepare_catalog_product_index_select', array(
+./Mage/Catalog/Model/Resource/Eav/Mysql4/Product/Indexer/Eav/Decimal.php:        Mage::dispatchEvent('prepare_catalog_product_index_select', array(
+./Mage/Catalog/Model/Resource/Eav/Mysql4/Product/Indexer/Eav/Abstract.php:        Mage::dispatchEvent('prepare_catalog_product_index_select', array(
+./Mage/Catalog/Model/Category.php:            Mage::dispatchEvent('catalog_category_tree_move_before', $eventParams);
+./Mage/Catalog/Model/Category.php:            Mage::dispatchEvent($this->_eventPrefix.'_move_before', $eventParams);
+./Mage/Catalog/Model/Category.php:            Mage::dispatchEvent($this->_eventPrefix.'_move_after', $eventParams);
+./Mage/Catalog/Model/Category.php:            Mage::dispatchEvent('catalog_category_tree_move_after', $eventParams);
+./Mage/Catalog/Model/Category.php:            Mage::dispatchEvent('category_move', $eventParams);
+./Mage/Catalog/Model/Product.php://        Mage::dispatchEvent($this->_eventPrefix.'_validate_before', array($this->_eventObject=>$this));
+./Mage/Catalog/Model/Product.php://        Mage::dispatchEvent($this->_eventPrefix.'_validate_after', array($this->_eventObject=>$this));
+./Mage/Catalog/Model/Product.php:        Mage::dispatchEvent($this->_eventPrefix.'_validate_before', array($this->_eventObject=>$this));
+./Mage/Catalog/Model/Product.php:        Mage::dispatchEvent($this->_eventPrefix.'_validate_after', array($this->_eventObject=>$this));
+./Mage/Catalog/Model/Product.php:        Mage::dispatchEvent('catalog_model_product_duplicate', array('current_product'=>$this, 'new_product'=>$newProduct));
+./Mage/Catalog/Model/Product.php:        Mage::dispatchEvent('catalog_product_is_salable_before', array(
+./Mage/Catalog/Model/Product.php:        Mage::dispatchEvent('catalog_product_is_salable_after', array(
+./Mage/Catalog/Model/Product.php:        Mage::dispatchEvent($this->_eventPrefix.'_delete_after_done', array($this->_eventObject=>$this));
+./Mage/Catalog/Model/Convert/Adapter/Product.php:        Mage::dispatchEvent('catalog_product_import_after', array());
+./Mage/Catalog/Model/Product/Type/Configurable/Price.php:                    Mage::dispatchEvent(
+./Mage/Catalog/Model/Product/Type/Abstract.php:        Mage::dispatchEvent($eventName, array(
+./Mage/Catalog/Model/Product/Type/Price.php:        Mage::dispatchEvent('catalog_product_get_final_price', array('product'=>$product, 'qty' => $qty));
+./Mage/Catalog/Model/Product/Status.php:            Mage::dispatchEvent('catalog_product_status_update', array(
+./Mage/Catalog/Model/Product/Action.php:        Mage::dispatchEvent('catalog_product_website_update_before', array(
+./Mage/Catalog/Model/Product/Action.php:        Mage::dispatchEvent('catalog_product_website_update', array(
+./Mage/CatalogSearch/Model/Mysql4/Fulltext.php:        Mage::dispatchEvent('catalogsearch_reset_search_result');
+./Mage/CatalogSearch/Model/Mysql4/Advanced.php:        Mage::dispatchEvent('catalogindex_prepare_price_select', $eventArgs);
+./Mage/CatalogSearch/Model/Mysql4/Advanced.php:        Mage::dispatchEvent('catalog_prepare_price_select', $eventArgs);
+./Mage/Paypal/Model/Cart.php:        Mage::dispatchEvent('paypal_prepare_line_items', array('paypal_cart' => $this));

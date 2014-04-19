@@ -1,0 +1,16 @@
+/media/*
+/var/*
+/app/etc/local.xml
+.buildpath
+.project
+.settings/
+.svn/
+sitemap.xml
+/sitemap/
+/sitemap/* 
+*.sql
+*.gz
+/includes/*
+/downloader/*
+.sass-cache
+error_log

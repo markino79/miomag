@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <importproduct_adminhtml_importproduct_showprogress>
+        <update handle="importproduct_import_index" />
+		<reference name="content">
+			<block type="adminhtml/template" name="uploadfile"  template="importproduct/importForm.phtml"/>
+        </reference>
+    </importproduct_adminhtml_importproduct_showprogress>
+</layout>

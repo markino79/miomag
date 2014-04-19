@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Artera_Magazzino>
+            <version>0.1.0</version>
+        </Artera_Magazzino>
+    </modules>
+	<admin>
+        <routers>
+			<magazzino>
+				<use>admin</use>
+				<args>
+					<module>Artera_Magazzino</module>
+					<frontName>magazzino</frontName>
+				</args>
+			</magazzino>
+        </routers>
+    </admin>
+	<adminhtml>
+		<menu>
+			<magazzino module="magazzino">
+				<title>Magazzino</title>
+				<sort_order>71</sort_order>               
+				<children>
+					<ges_carico module="magazzino">
+						<title>Carico</title>
+						<sort_order>0</sort_order>
+						<action>magazzino/adminhtml_movimenti/new/tipo/C</action>
+					</ges_carico>
+					<ges_scarico module="magazzino">
+						<title>Scarico</title>
+						<sort_order>1</sort_order>
+						<action>magazzino/adminhtml_movimenti/new/tipo/S</action>
+					</ges_scarico>
+					<ges_magazzini module="magazzino">
+						<title>Magazzini</title>
+						<sort_order>2</sort_order>
+						<action>magazzino/adminhtml_magazzini/</action>
+					</ges_magazzini>
+					<consultazioni module="magazzino">
+						<title>Consultazioni</title>
+						<sort_order>3</sort_order>
+						<children>
+							<cons_movimenti module="magazzino">
+								<title>Movimenti</title>
+								<sort_order>0</sort_order>
+								<action>magazzino/adminhtml_movimenti/</action>
+							</cons_movimenti>
+							<cons_qta module="magazzino">
+								<title>Quantità</title>
+								<sort_order>1</sort_order>
+								<action>magazzino/adminhtml_movimenti/showqty/</action>
+							</cons_qta>
+						</children>
+					</consultazioni>
+				</children>
+			</magazzino>
+		</menu>
+		<acl>
+			<resources>
+				<admin>
+					<children>
+						<magazzino module="magazzino">
+							<title>Magazzino</title>
+							<sort_order>71</sort_order>               
+							<children>
+								<ges_carico module="magazzino">
+									<title>Carico</title>
+									<sort_order>0</sort_order>
+								</ges_carico>
+								<ges_scarico module="magazzino">
+									<title>Scarico</title>
+									<sort_order>1</sort_order>
+								</ges_scarico>
+								<ges_magazzini module="magazzino">
+									<title>Magazzini</title>
+									<sort_order>2</sort_order>
+								</ges_magazzini>
+								<consultazioni module="magazzino">
+									<title>Consultazioni</title>
+									<sort_order>3</sort_order>
+									<children>
+										<cons_movimenti module="magazzino">
+											<title>Movimenti</title>
+											<sort_order>0</sort_order>
+										</cons_movimenti>
+										<cons_qta module="magazzino">
+											<title>Quantità</title>
+											<sort_order>1</sort_order>
+										</cons_qta>
+									</children>
+								</consultazioni>
+							</children>
+						</magazzino>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+    </adminhtml>   
+	<global>
+        <models>
+            <magazzino>
+                <class>Artera_Magazzino_Model</class>
+                <resourceModel>magazzino_mysql4</resourceModel>
+            </magazzino>
+            <magazzino_mysql4>
+                <class>Artera_Magazzino_Model_Mysql4</class>
+                <entities>
+                    <movimenti>
+                        <table>movimenti</table>
+                    </movimenti>
+					<magazzini>
+						<table>magazzini</table>
+					</magazzini>
+					<totalimagazzini>
+						<table>totali_magazzini</table>
+					</totalimagazzini>
+                </entities>
+            </magazzino_mysql4>
+        </models>
+        <resources>
+            <magazzino_setup>
+                <setup>
+                    <module>Artera_Magazzino</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </magazzino_setup>
+            <magazzino_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </magazzino_write>
+            <magazzino_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </magazzino_read>
+        </resources>
+		<blocks>
+            <magazzino>
+                <class>Artera_Magazzino_Block</class>
+            </magazzino>
+        </blocks>
+		<helpers>
+            <magazzino>
+                <class>Artera_Magazzino_Helper</class>
+            </magazzino>
+        </helpers>
+	</global>
+</config>

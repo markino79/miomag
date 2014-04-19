@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<config>
+	<modules>
+		<Artera_Tax>
+			<version>0.1.0</version>
+		</Artera_Tax>
+	</modules>
+	<global>
+		<helpers>
+			<tax>
+				<rewrite>
+					<data>Artera_Tax_helper_Data</data>
+				</rewrite>
+			</tax>
+		</helpers>
+	</global>
+</config>

@@ -1,0 +1,20 @@
+<h1>Punti vendita</h1> 
+<?php
+	$collection = Mage::getModel('puntivendita/puntivendita')->getCollection() ;
+	$caramelle = Mage::getModel('puntivendita/caramelle')->getCollection() ;
+?>
+
+<table>
+	<?php foreach($collection as $item):?>
+		<tr>
+			<td><?php echo $item->getNome()  ?></td><td>&nbsp;</td>
+			<td><?php echo $item->getIndirizzo()  ?></td><td>&nbsp;</td>
+			<td>(<?php echo $item->getProvincia()  ?>)</td><td>&nbsp;</td>
+		</tr>
+	<?php endforeach ;?>
+	<?php foreach($caramelle as $caramella):?>
+		<tr>
+			<td><?php echo $caramella->getNome()  ?></td><td>&nbsp;</td>
+		</tr>
+	<?php endforeach ;?>
+</table>

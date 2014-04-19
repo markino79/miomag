@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <puntivendita_adminhtml_puntivendita_index>
+        <reference name="content">
+            <block type="puntivendita/adminhtml_puntivendita" name="puntivendita" />
+        </reference>
+    </puntivendita_adminhtml_puntivendita_index>
+</layout>

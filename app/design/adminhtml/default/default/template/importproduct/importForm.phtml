@@ -1,0 +1,34 @@
+<div class="contente-header">
+	<table cellspacing="0" class="grid-header">
+		<tr>
+			<td><h3><?php echo $this->__("Importazione prodotti in corso...") ?> </h3></td>
+		</tr>
+		<tr>
+			<td id='info'></td>
+		</tr>
+		
+	</table>
+</div>
+
+<script type="text/javascript">
+
+avanzamento() ;
+
+function avanzamento(){
+	new Ajax.Request('<?php echo Mage::getUrl('importproduct/getstatus')?>', {
+		onSuccess: function(transport) {
+			var p = transport.responseText ;
+			var r = p.evalJSON() ;
+			var messaggi = r.message ;
+			var messaggio = "" ;
+			for (var x = 0; x < messaggi.length ; x++){
+				messaggio+= messaggi[x] + "<br/>";
+			}
+			$('info').update(messaggio) ;
+			if (r.status != 0 && r != null ) {
+				avanzamento() ;
+			}
+		}
+	});
+}	
+</script>

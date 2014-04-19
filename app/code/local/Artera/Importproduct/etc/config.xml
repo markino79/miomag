@@ -1,0 +1,110 @@
+<?xml version="1.0" ?>
+<config>
+	<modules>
+		<Artera_Importproduct>
+			<version>0.1.0</version>
+		</Artera_Importproduct>
+	</modules>
+	
+	<admin>
+		<routers>
+			<importproduct>
+				<use>admin</use>
+				<args>
+					<module>Artera_Importproduct</module>
+					<frontName>importproduct</frontName>
+				</args>
+			</importproduct>
+		</routers>
+	</admin> 
+	<frontend>
+		<routers>
+			<importproduct>
+				<use>standard</use>
+				<args>
+					<module>Artera_Importproduct</module>
+					<frontName>importproduct</frontName>
+				</args>
+			</importproduct>
+		</routers>
+	</frontend>
+	<adminhtml>
+		<menu>
+			<catalog>
+				<children>
+					<import translete="title" >
+						<title>Importa articoli</title>
+						<children>
+							<importfilecsv>
+								<title>Importa CSV</title>
+								<action>importproduct/adminhtml_importproduct</action>
+							</importfilecsv>
+							<importexamplecsv>
+								<title>CSV d'esempio</title>
+								<action>importproduct/adminhtml_importproduct/example</action>
+							</importexamplecsv>
+							<importtable>
+								<title>Gestione errori</title>
+								<action>importproduct/adminhtml_importproduct/importtable</action>
+							</importtable>
+						</children>
+					</import>
+				</children>
+			</catalog>
+		</menu>
+		 <layout>
+            <updates>
+                <importproduct>
+                    <file>importproduct.xml</file>
+                </importproduct>
+            </updates>
+        </layout>
+	</adminhtml>
+	
+	<global>
+		<models>
+			<importproduct>
+				<class>Artera_Importproduct_Model</class>
+				<resourceModel>importproduct_mysql4</resourceModel>
+			</importproduct>
+			<importproduct_mysql4>
+				<class>Artera_Importproduct_Model_Mysql4</class>
+				<entities>
+					<importproduct>
+						<table>importproduct</table>
+					</importproduct>
+				</entities>
+			</importproduct_mysql4>
+		</models>
+		<resources>
+			<importproduct_setup>
+				<setup>
+					<module>Artera_Importproduct</module>
+				</setup>
+				<connection>
+					<use>core_setup</use>
+				</connection>
+			</importproduct_setup>
+			<importproduct_write>
+				<connection>
+					<use>core_write</use>
+				</connection>
+			</importproduct_write>
+			<importproduct_read>
+				<connection>
+					<use>core_read</use>
+				</connection>
+			</importproduct_read>
+		</resources>
+		<helpers>
+			<importproduct>
+				<class>Artera_Importproduct_Helper</class>
+			</importproduct>
+		</helpers>
+		<blocks>
+			<importproduct>
+				<class>Artera_Importproduct_Block</class>
+			</importproduct>
+		</blocks>
+	</global>
+</config>

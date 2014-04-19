@@ -1,0 +1,53 @@
+<script>
+	var idp_imgokmarche='<img id="okMarche" style="display: none;" src="<?php echo $this->getSkinUrl('images/ok.png') ;?>">'
+	var idp_imgoktipi='<img id="okTipi" style="display: none;" src="<?php echo $this->getSkinUrl('images/ok.png') ;?>">';
+
+	var idp_imgokmodelli='<img id="okModelli" style="display: none;" src="<?php echo $this->getSkinUrl('images/ok.png') ;?>">';
+	var idp_imgloading='<img src="<?php echo $this->getSkinUrl('images/loading.gif') ;?>">';
+</script>
+<h1>Cerca il tuo toner</h1>
+<p>Per trovare il toner o la cartuccia indica marca e modello dai menu seguenti:</p>
+
+	<form name="search" >
+
+		<table id="idprint-tb-1">
+
+		<tr>
+			<td name="destinazioneMarche" id="destinazioneMarche">
+				Pagina al momento non disponibile.
+				Ci scusiamo per il disagio.
+			</td>
+			<td style="text-align:center;vertical-align:middle;">
+				<script>document.write(idp_imgokmarche);</script>
+			</td>
+		</tr>
+
+		<tr>
+			<td name="destinazioneTipi" id="destinazioneTipi"></td>
+			<td style="text-align:center;vertical-align:middle;">
+				<script>document.write(idp_imgoktipi);</script>
+			</td>
+		</tr>
+
+		<tr>
+			<td name="destinazioneModelli" id="destinazioneModelli"></td>
+			<td style="text-align:center;vertical-align:middle;">
+				<script>document.write(idp_imgokmodelli);</script>
+			</td>
+		</tr>
+		</table>
+
+		<div name="destinazionePulsante" id="destinazionePulsante" style="display: none;">
+			<input type="button" name="cerca" value="Cerca" onclick="getConsumabili(document.search.marche.value, document.search.tipi.value, document.search.modelli.value)" class="button">
+		</div>
+
+		<div name="idp_loader" id="idp_loader" style="display: none;">
+			<script>document.write(idp_imgloading);</script>
+		</div>
+
+	</form>
+
+<div name="destinazioneConsumabili" id="destinazioneConsumabili">
+</div>
+
+<script>getMarche();</script> 
