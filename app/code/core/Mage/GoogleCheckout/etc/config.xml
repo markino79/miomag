@@ -29,6 +29,7 @@
     <modules>
         <Mage_GoogleCheckout>
             <version>1.6.0.1</version>
+            <active>false</active>
         </Mage_GoogleCheckout>
     </modules>
     <global>
@@ -41,7 +42,7 @@
     <default>
         <payment>
             <googlecheckout>
-                <active>1</active>
+                <active>2</active>
                 <model>googlecheckout/payment</model>
             </googlecheckout>
         </payment>
