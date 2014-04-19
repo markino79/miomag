@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * Product additional attributes template
+ *
+ * @see Mkp_Attributesgroup_Block_Product_View_Attributes
+ */
+?>
+<?php
+    $_helper = $this->helper('catalog/output');
+    $_product = $this->getProduct();
+    $_additional = $this->getAdditionalData();
+
+?>
+
+<?php if(!empty($_additional) ): ?>
+	<?php foreach ($_additional as $key=>$group): ?>
+	    <h2><?php echo $this->__($key) ?> </h2>
+	    <table class="data-table" id="product-attribute-specs-table">
+	        <col width="25%" />
+	        <col />
+	        <tbody>
+	        <?php foreach ($group['data'] as $_data): ?>
+	            <tr>
+	                <th class="label"><?php echo $this->escapeHtml($this->__($_data['label'])) ?></th>
+	                <td class="data"><?php echo $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?></td>
+	            </tr>
+	        <?php endforeach; ?>
+	        </tbody>
+	    </table>
+	<?php endforeach; ?>
+    <script type="text/javascript">decorateTable('product-attribute-specs-table')</script>
+<?php endif;?>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mkp_Attributesgroup>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Mkp_Attributesgroup>
+    </modules>
+</config> 

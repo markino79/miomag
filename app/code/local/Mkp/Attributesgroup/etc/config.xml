@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<Mkp_Attributesgroop>
+		<version>1.0.0</version>
+	</Mkp_Attributesgroop>
+    <global>
+        <blocks>
+            <attributesgroup>
+                <class>Mkp_Attributesgroup_Block</class>
+            </attributesgroup>
+        </blocks>
+        <helpers>
+            <attributesgroup>
+                <class>Mkp_Attributesgroup_Helper</class>
+            </attributesgroup>
+        </helpers>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <attributesgroup>
+                    <file>mkp/attributesgroup.xml</file>
+                </attributesgroup>
+            </updates>
+        </layout>
+    </frontend>
+</config>
